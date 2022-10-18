@@ -1,0 +1,10 @@
+<div *ngIf="hero">
+  <!-- 파이프 연산자를 이용하여 히어로의이름을 대문자로 표 -->
+  <h2>{{hero.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{hero.id}}</div>
+  <div>
+    <label for="name">Hero name: </label>
+    <!-- [(ngModel)]는  Angular의 양방향 바인딩 문법 -->
+    <input id="name" [(ngModel)]="hero.name" placeholder="name">
+  </div>
+</div>
